@@ -1,0 +1,31 @@
+
+# Create Payment Code 7 ELEVEN Request
+
+## Structure
+
+`CreatePaymentCode7ELEVENRequest`
+
+## Fields
+
+| Name | Type | Tags | Description |
+|  --- | --- | --- | --- |
+| `referenceId` | `string` | Required | - |
+| `channelCode` | `string` | Required | - |
+| `customerName` | `string` | Required | - |
+| `amount` | `number` | Required | - |
+| `currency` | `string` | Required | - |
+| `market` | `string` | Required | - |
+
+## Example (as JSON)
+
+```json
+{
+  "reference_id": "payment-code-{{$timestamp}}",
+  "channel_code": "7ELEVEN",
+  "customer_name": "JOHN DOE",
+  "amount": 100,
+  "currency": "PHP",
+  "market": "PH"
+}
+```
+
